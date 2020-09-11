@@ -1,0 +1,120 @@
+.page-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  .container,
+  .header-wrapper,
+  .navigation-list {
+    @include flexCenter;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .navigation-list-item:not(:last-child),
+  .navigation {
+    margin-right: 30px;
+  }
+
+  .light-btn {
+    margin-right: 17px;
+  }
+
+  .navigation-list-item-link {
+    @include fontData(400, 16px, 1.19);
+    color: $nav-color;
+
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: $hero-title-color;
+    }
+  }
+}
+
+// @media screen and (max-width: 767px) {
+//   /* Кнопка открытия/закрытия мобильного меню */
+//   .menu-btn {
+//     display: flex;
+//     margin: 0;
+//     padding: 10px 0;
+
+//     background-color: transparent;
+//     border: none;
+//     cursor: pointer;
+
+//     overflow: hidden;
+//     outline-color: $accent-color;
+
+//     &:hover .icon-close-menu,
+//     &:focus .icon-close-menu {
+//       fill: $accent-color;
+//     }
+//   }
+
+//   .menu-btn.is-open {
+//     &:hover .icon-menu,
+//     &:focus .icon-menu {
+//       fill: $accent-color;
+//     }
+//   }
+
+//   .menu-btn.is-open .icon-close-menu,
+//   .menu-btn .icon-menu {
+//     // display: block;
+//     opacity: 1;
+//     transform: scale(1);
+//     transform-origin: center;
+
+//     fill: #000000;
+//   }
+
+//   .menu-btn.is-open .icon-menu,
+//   .menu-btn .icon-close-menu {
+//     // display: none;
+//     opacity: 0;
+//     transform: scale(0);
+//     transform-origin: center;
+
+//     fill: $accent-color;
+//   }
+
+//   .icon-close-menu,
+//   .icon-menu {
+//     transition: transform 250ms linear 150ms, opacity 250ms linear 150ms;
+//   }
+
+//   // Мобильное меню
+//   .header-wrapper {
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     // z-index: 100;
+
+//     // display: none;
+
+//     text-align: center;
+
+//     background-color: $background-main-color;
+//     border-top: 1px solid #ececec;
+
+//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+//       0px 1px 3px rgba(0, 0, 0, 0.16);
+
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: scale(0);
+//     transition: opacity 250ms linear, visibility 250ms linear,
+//       transform 500ms linear;
+
+//     &.is-open {
+//       // display: block;
+//       opacity: 1;
+//       visibility: visible;
+//       transform: scale(1);
+//     }
+//   }
+// }

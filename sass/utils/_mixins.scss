@@ -1,0 +1,11 @@
+// стилистика шрифтов
+@mixin fontData($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
