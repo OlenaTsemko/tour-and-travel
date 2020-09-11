@@ -1,0 +1,44 @@
+%btn {
+  @include flexCenter;
+  justify-content: center;
+  @include fontData(500, 15px, 1);
+
+  width: 132px;
+  height: 44px;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background-color 250ms linear, color 250ms linear,
+    border 250ms linear;
+
+  outline: none;
+}
+
+.light-btn {
+  @extend %btn;
+  color: $accent-color;
+  background-color: $background-main-color;
+  border: 1px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-text-color;
+    border: 1px solid transparent;
+  }
+}
+
+.dark-btn {
+  @extend %btn;
+  background: $accent-color;
+  color: $white-text-color;
+  border: 1px solid transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $background-main-color;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
