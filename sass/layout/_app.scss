@@ -1,0 +1,31 @@
+.app {
+  padding-top: 155px;
+  padding-bottom: 248px;
+
+  background-image: url(../images/app-img.png);
+  background-size: 599px;
+  background-repeat: no-repeat;
+  background-position: 770px 0;
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .wrapper-flex {
+    padding-right: 108px;
+    width: 50%;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 35px;
+  }
+
+  .dark-btn {
+    width: 164px;
+  }
+}

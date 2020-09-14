@@ -1,11 +1,11 @@
 .hero {
   padding-top: 66px;
-  padding-bottom: 313px;
+  padding-bottom: 300px;
 
   background-image: url(../images/header-img.png);
-  background-size: 687px, 654px;
+  background-size: 687px;
   background-repeat: no-repeat;
-  background-position: 808px, 33px;
+  background-position: 808px 33px;
 
   .wrapper-flex {
     display: flex;
@@ -39,6 +39,7 @@
   margin-bottom: 47px;
 
   .form-field {
+    position: relative;
     margin-right: 30px;
     margin-bottom: 35px;
 
@@ -54,11 +55,43 @@
     }
 
     .form-input {
+      padding: 21px 31px;
       width: 100%;
       height: 100%;
       border: 0.8px solid #afb0b9;
       border-radius: 6px;
       outline: none;
     }
+
+    // удалить стрелку по умолчанию в даталист
+    input::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+  }
+}
+
+.label-wrap {
+  // padding: 21px 31px;
+
+  @include flexCenter;
+
+  .form-label {
+    position: absolute;
+    top: 21px;
+    left: 31px;
+
+    @include fontData(400, 15px, 1);
+    color: $text-color;
+
+    .form-input:focus + &,
+    .form-input:not(:placeholder-shown) + & {
+      transform: translateY(-40px);
+    }
+  }
+
+  .form-icon {
+    position: absolute;
+    top: 26px;
+    right: 20px;
   }
 }

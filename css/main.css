@@ -109,6 +109,29 @@ img {
   border: 1px solid #fb8f1d;
 }
 
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.39;
+  color: #000000;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.76;
+  color: #7d7987;
+}
+
+.view-all-link {
+  margin-right: 11px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 3.53;
+  color: #fb8f1d;
+}
+
 .page-header {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -148,11 +171,11 @@ img {
 
 .hero {
   padding-top: 66px;
-  padding-bottom: 313px;
+  padding-bottom: 300px;
   background-image: url(../images/header-img.png);
-  background-size: 687px, 654px;
+  background-size: 687px;
   background-repeat: no-repeat;
-  background-position: 808px, 33px;
+  background-position: 808px 33px;
 }
 
 .hero .wrapper-flex {
@@ -188,6 +211,7 @@ img {
 }
 
 .form-wrapper .form-field {
+  position: relative;
   margin-right: 30px;
   margin-bottom: 35px;
   width: 220px;
@@ -203,10 +227,169 @@ img {
 }
 
 .form-wrapper .form-field .form-input {
+  padding: 21px 31px;
   width: 100%;
   height: 100%;
   border: 0.8px solid #afb0b9;
   border-radius: 6px;
   outline: none;
+}
+
+.form-wrapper .form-field input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.label-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.label-wrap .form-label {
+  position: absolute;
+  top: 21px;
+  left: 31px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  color: #4a4c53;
+}
+
+.form-input:focus + .label-wrap .form-label,
+.form-input:not(:placeholder-shown) + .label-wrap .form-label {
+  transform: translateY(-40px);
+}
+
+.label-wrap .form-icon {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+}
+
+.new-way {
+  padding-top: 115px;
+  padding-bottom: 150px;
+  background-image: url(../images/new-way.png);
+  background-size: 659px;
+  background-repeat: no-repeat;
+  background-position: 142px 0;
+}
+
+.new-way .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-way .wrapper-flex {
+  padding-left: 102px;
+  width: 50%;
+}
+
+.new-way .title {
+  margin-bottom: 20px;
+}
+
+.new-way .description {
+  margin-bottom: 35px;
+}
+
+.new-way .dark-btn {
+  width: 164px;
+}
+
+.destinations {
+  padding-top: 150px;
+  padding-bottom: 244px;
+}
+
+.destinations .wrapper-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+.destinations-list {
+  display: flex;
+  align-items: center;
+}
+
+.destinations-list .destinations-list-item {
+  position: relative;
+  width: calc((100% - 75px) / 4);
+}
+
+.destinations-list .destinations-list-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.destinations-list .destinations-list-item-img {
+  border-radius: 8px;
+}
+
+.dest-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 56px;
+  background-color: #ffffff;
+  border-radius: 0px 6px 0px 0px;
+}
+
+.dest-wrapper .resort {
+  padding-top: 12px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.47;
+  color: #042521;
+}
+
+.dest-wrapper .country {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #80918e;
+}
+
+.app {
+  padding-top: 155px;
+  padding-bottom: 248px;
+  background-image: url(../images/app-img.png);
+  background-size: 599px;
+  background-repeat: no-repeat;
+  background-position: 770px 0;
+}
+
+.app .container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app .wrapper-flex {
+  padding-right: 108px;
+  width: 50%;
+}
+
+.app .title {
+  margin-bottom: 20px;
+}
+
+.app .description {
+  margin-bottom: 35px;
+}
+
+.app .dark-btn {
+  width: 164px;
+}
+
+.testimonials-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-list-item .previous-btn,
+.testimonials-list-item .next-btn {
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */

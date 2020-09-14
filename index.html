@@ -82,43 +82,104 @@
 
                 <div class="form-wrapper">
                   <div class="form-field">
-                    <input type="text" class="form-input" /><label
-                      for=""
-                      class="form-label"
-                    ></label>
-                    <svg>
-                      <use></use>
-                    </svg>
+                    <input
+                      class="form-input"
+                      list="locations"
+                      name="continent"
+                      id="continent"
+                      placeholder=" "
+                    />
+                    <div class="label-wrap">
+                      <label class="form-label" for="continent">Location</label>
+                      <svg class="form-icon" width="9.5" height="6">
+                        <use href="./images/sprite.svg#icon-frame"></use>
+                      </svg>
+                    </div>
+
+                    <datalist class="datalist" id="locations" name="locations">
+                      <option>Europe</option>
+                      <option>Asia</option>
+                      <option>Africa</option>
+                      <option>USA</option>
+                    </datalist>
                   </div>
 
                   <div class="form-field">
-                    <input type="text" class="form-input" /><label
-                      for=""
-                      class="form-label"
-                    ></label>
-                    <svg>
-                      <use></use>
-                    </svg>
+                    <input
+                      class="form-input"
+                      list="activity"
+                      name="act"
+                      id="act"
+                      placeholder=" "
+                    />
+                    <div class="label-wrap">
+                      <label class="form-label" for="act">Activity</label>
+                      <svg class="form-icon" width="9.5" height="6">
+                        <use href="./images/sprite.svg#icon-frame"></use>
+                      </svg>
+                    </div>
+
+                    <datalist class="datalist" id="activity" name="activity">
+                      <option>Water sports</option>
+                      <option>The mountains</option>
+                      <option>Relax on the beach</option>
+                    </datalist>
                   </div>
 
                   <div class="form-field">
-                    <input type="text" class="form-input" /><label
-                      for=""
-                      class="form-label"
-                    ></label>
-                    <svg>
-                      <use></use>
-                    </svg>
+                    <input
+                      class="form-input"
+                      list="grade"
+                      name="star"
+                      id="star"
+                      placeholder=" "
+                    />
+                    <div class="label-wrap">
+                      <label class="form-label" for="star">Grade</label>
+                      <svg class="form-icon" width="9.5" height="6">
+                        <use href="./images/sprite.svg#icon-frame"></use>
+                      </svg>
+                    </div>
+
+                    <datalist class="datalist" id="grade" name="grade">
+                      <option>5</option>
+                      <option>4</option>
+                      <option>3</option>
+                      <option>2</option>
+                    </datalist>
                   </div>
 
                   <div class="form-field">
-                    <input type="text" class="form-input" /><label
-                      for=""
-                      class="form-label"
-                    ></label>
-                    <svg>
-                      <use></use>
-                    </svg>
+                    <input
+                      class="form-input"
+                      list="date"
+                      name="month"
+                      id="month"
+                      placeholder=" "
+                    />
+                    <div class="label-wrap">
+                      <label class="form-label" for="month">Date</label>
+                      <svg class="form-icon" width="9.5" height="6">
+                        <use href="./images/sprite.svg#icon-frame"></use>
+                      </svg>
+                    </div>
+
+                    <datalist class="datalist" id="date" name="date">
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </datalist>
                   </div>
                 </div>
 
@@ -132,54 +193,82 @@
       <!-- New way -->
       <section class="new-way">
         <div class="container">
-          <h2 class="title">A new way to explore the world</h2>
-          <p class="description">
-            For decades travellers have reached for Lonely Planet books when
-            looking to plan and execute their perfect trip, but now, they can
-            also let Lonely Planet Experiences lead the way
-          </p>
-          <a href="" class="dark-btn">Learn more</a>
+          <div class="wrapper-flex">
+            <h2 class="title">A new way to explore the world</h2>
+            <p class="description">
+              For decades travellers have reached for Lonely Planet books when
+              looking to plan and execute their perfect trip, but now, they can
+              also let Lonely Planet Experiences lead the way
+            </p>
+            <a href="" class="dark-btn">Learn more</a>
+          </div>
         </div>
       </section>
 
       <!-- Destinations -->
       <section class="destinations">
         <div class="container">
-          <h2 class="title">Featured destinations</h2>
-          <a href=""
-            >View all
-            <svg>
-              <use></use>
-            </svg>
-          </a>
+          <div class="wrapper-flex">
+            <h2 class="title">Featured destinations</h2>
+            <a class="view-all-link" href=""
+              >View all
+              <svg class="" width="4" height="9">
+                <use href="./images/sprite.svg#icon-vector"></use>
+              </svg>
+            </a>
+          </div>
 
           <ul class="destinations-list">
             <li class="destinations-list-item">
               <a href="" class="destinations-list-item-link">
-                <img src="" alt="" class="destinations-list-item-img" />
-                <h3 class="resort">Raja Ampat</h3>
-                <p class="country">Indonesia</p>
+                <img
+                  src="./images/destination-1.jpg"
+                  alt=""
+                  class="destinations-list-item-img"
+                />
+                <div class="dest-wrapper">
+                  <h3 class="resort">Raja Ampat</h3>
+                  <p class="country">Indonesia</p>
+                </div>
               </a>
             </li>
             <li class="destinations-list-item">
               <a href="" class="destinations-list-item-link">
-                <img src="" alt="" class="destinations-list-item-img" />
-                <h3 class="resort">Fanjingshan</h3>
-                <p class="country">China</p>
+                <img
+                  src="./images/destination-2.jpg"
+                  alt=""
+                  class="destinations-list-item-img"
+                />
+                <div class="dest-wrapper">
+                  <h3 class="resort">Fanjingshan</h3>
+                  <p class="country">China</p>
+                </div>
               </a>
             </li>
             <li class="destinations-list-item">
               <a href="" class="destinations-list-item-link">
-                <img src="" alt="" class="destinations-list-item-img" />
-                <h3 class="resort">Vevey</h3>
-                <p class="country">Switzerland</p>
+                <img
+                  src="./images/destination-3.jpg"
+                  alt=""
+                  class="destinations-list-item-img"
+                />
+                <div class="dest-wrapper">
+                  <h3 class="resort">Vevey</h3>
+                  <p class="country">Switzerland</p>
+                </div>
               </a>
             </li>
             <li class="destinations-list-item">
               <a href="" class="destinations-list-item-link">
-                <img src="" alt="" class="destinations-list-item-img" />
-                <h3 class="resort">Skadar</h3>
-                <p class="country">Montenegro</p>
+                <img
+                  src="./images/destination-4.jpg"
+                  alt=""
+                  class="destinations-list-item-img"
+                />
+                <div class="dest-wrapper">
+                  <h3 class="resort">Skadar</h3>
+                  <p class="country">Montenegro</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -189,13 +278,15 @@
       <!-- App -->
       <section class="app">
         <div class="container">
-          <h2 class="title">Guides by Thousand Sunny</h2>
-          <p class="description">
-            Packed with tips and advice from our on-the-ground experts, our city
-            guides app (iOS and Android) is the ultimate resource before and
-            during a trip.
-          </p>
-          <a href="" class="dark-btn">Download</a>
+          <div class="wrapper-flex">
+            <h2 class="title">Guides by Thousand Sunny</h2>
+            <p class="description">
+              Packed with tips and advice from our on-the-ground experts, our
+              city guides app (iOS and Android) is the ultimate resource before
+              and during a trip.
+            </p>
+            <a href="" class="dark-btn">Download</a>
+          </div>
         </div>
       </section>
 
@@ -206,6 +297,22 @@
 
           <ul class="testimonials-list">
             <li class="testimonials-list-item">
+              <div class="info-wrapper">
+                <svg>
+                  <use></use>
+                </svg>
+                <p class="testimonials-text">
+                  “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                  dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
+                  sit amet turpis nec”
+                </p>
+                <h3 class="name">Edward Newgate</h3>
+                <p class="position">Founder Circle</p>
+              </div>
+              <img src="./images/testimonials-img.jpg" alt="" class="photo" />
+            </li>
+
+            <!-- <li class="testimonials-list-item">
               <svg>
                 <use></use>
               </svg>
@@ -231,31 +338,17 @@
               <h3 class="name">Edward Newgate</h3>
               <p class="position">Founder Circle</p>
               <img src="" alt="" class="photo" />
-            </li>
-
-            <li class="testimonials-list-item">
-              <svg>
-                <use></use>
-              </svg>
-              <p class="testimonials-text">
-                “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
-                dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit
-                sit amet turpis nec”
-              </p>
-              <h3 class="name">Edward Newgate</h3>
-              <p class="position">Founder Circle</p>
-              <img src="" alt="" class="photo" />
-            </li>
+            </li> -->
           </ul>
 
           <button class="previous-btn" type="button">
-            <svg>
-              <use></use>
+            <svg class="" width="40" height="40">
+              <use href="./images/sprite.svg#icon-previous"></use>
             </svg>
           </button>
           <button class="next-btn" type="button">
-            <svg>
-              <use></use>
+            <svg class="" width="40" height="40">
+              <use href="./images/sprite.svg#icon-next"></use>
             </svg>
           </button>
         </div>
@@ -265,7 +358,7 @@
       <section class="stories">
         <div class="container">
           <h2 class="title">Trending stories</h2>
-          <a href=""
+          <a class="view-all-link" href=""
             >View all
             <svg>
               <use></use>

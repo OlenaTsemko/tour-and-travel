@@ -1,0 +1,11 @@
+.title {
+  font-family: $title-font;
+
+  @include fontData(700, 36px, 1.39);
+  color: $section-title-color;
+}
+
+.description {
+  @include fontData(300, 17px, 1.76);
+  color: $section-description-color;
+}

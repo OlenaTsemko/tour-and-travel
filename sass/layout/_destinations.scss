@@ -1,0 +1,50 @@
+.destinations {
+  padding-top: 150px;
+  padding-bottom: 244px;
+
+  .wrapper-flex {
+    @include flexCenter;
+    justify-content: space-between;
+
+    margin-bottom: 54px;
+  }
+}
+
+.destinations-list {
+  @include flexCenter;
+
+  .destinations-list-item {
+    position: relative;
+    width: calc((100% - 75px) / 4);
+  }
+
+  .destinations-list-item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .destinations-list-item-img {
+    border-radius: 8px;
+  }
+}
+
+.dest-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 120px;
+  height: 56px;
+  background-color: $background-main-color;
+  border-radius: 0px 6px 0px 0px;
+
+  .resort {
+    padding-top: 12px;
+    @include fontData(600, 17px, 1.47);
+    color: #042521;
+  }
+
+  .country {
+    @include fontData(500, 15px, 1.6);
+    color: #80918e;
+  }
+}

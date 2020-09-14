@@ -1,0 +1,5 @@
+.view-all-link {
+  margin-right: 11px;
+  @include fontData(600, 17px, 3.53);
+  color: $accent-color;
+}

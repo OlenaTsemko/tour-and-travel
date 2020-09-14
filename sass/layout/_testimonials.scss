@@ -1,0 +1,9 @@
+.testimonials-list-item {
+  @include flexCenter;
+
+  .previous-btn,
+  .next-btn {
+    background-color: $background-main-color;
+    border-radius: 50%;
+  }
+}

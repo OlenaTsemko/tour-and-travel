@@ -1,0 +1,31 @@
+.new-way {
+  padding-top: 115px;
+  padding-bottom: 150px;
+
+  background-image: url(../images/new-way.png);
+  background-size: 659px;
+  background-repeat: no-repeat;
+  background-position: 142px 0;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .wrapper-flex {
+    padding-left: 102px;
+    width: 50%;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 35px;
+  }
+
+  .dark-btn {
+    width: 164px;
+  }
+}
